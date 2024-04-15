@@ -1,13 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Натхнені Параджановим</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <div id="app">app</div>
+    <header class="header">
+      <nav>
+        <a href="/" class="logo">
+          <img src="/images/header/logo.png" alt="логотип" class="logo-img" />
+        </a>
+      </nav>
+      <div class="cup-btn-wrap">
+        <button type="button" class="cup-btn">
+          <img src="/images/header/cup.png" alt="кружка" class="cup-img" />
+        </button>
+        <img src="/images/warning.png" alt="застереження" class="warning" />
+      </div>
+    </header>
+    <main>
+      <section>
+        <h1 class="hidden-title">Шлях Параджанова</h1>
+        <div class="map-container js-map-container">
+          <ul class="map js-map">
+            <li class="map-item life">
+              <svg class="life-quote-icon">
+                <use href="/icons/icons.svg#life-quote"></use>
+              </svg>
+              <div class="life-header">
+                <div class="marker life">
+                  <svg class="marker-icon life">
+                    <use href="/icons/icons.svg#marker"></use>
+                  </svg>
+                  <p class="marker-number life">1</p>
+                  <svg class="chevron-icon life">
+                    <use href="/icons/icons.svg#chevron-right"></use>
+                  </svg>
+                </div>
+                <p class="card-title">Життя параджанова</p>
+              </div>
+              <img
+                src="/images/life/face.png"
+                alt="обличчя митця"
+                class="map-img life"
+              />
+            </li>
+            <li class="map-item shadows">
+              <img
+                src="/images/shadows/crow.png"
+                alt="ворон"
+                class="map-img crow"
+              />
+              <img
+                src="/images/shadows/heroes.png"
+                alt="герої"
+                class="map-img heroes"
+              />
+              <img
+                src="/images/shadows/candles.png"
+                alt="свічки"
+                class="map-img candles"
+              />
+              <img
+                src="/images/shadows/mountains.png"
+                alt="гори"
+                class="map-img mountains"
+              />
+              <div class="shadows-header">
+                <div class="marker-wrap shadows">
+                  <svg class="marker-icon shadows">
+                    <use href="/icons/icons.svg#marker"></use>
+                  </svg>
+                  <p class="marker-number shadows">2</p>
+                  <svg class="chevron-icon shadows">
+                    <use href="/icons/icons.svg#chevron-right"></use>
+                  </svg>
+                </div>
+                <p class="card-title">Тіні забутих предків</p>
+              </div>
+            </li>
+            <li class="map-item recipe">
+              <img
+                src="/images/recipe/recipe.png"
+                alt="рецепт"
+                class="map-img recipe"
+              />
+              <div class="recipe-header">
+                <div class="marker-wrap recipe">
+                  <svg class="marker-icon recipe">
+                    <use href="/icons/icons.svg#marker"></use>
+                  </svg>
+                  <p class="marker-number recipe">3</p>
+                  <svg class="chevron-icon recipe">
+                    <use href="/icons/icons.svg#chevron-right"></use>
+                  </svg>
+                </div>
+                <p class="card-title">Рецепт з фільму</p>
+              </div>
+            </li>
+            <li class="map-item inspiration">
+              <img
+                src="/images/inspiration/land.png"
+                alt="берег"
+                class="map-img land"
+              />
+              <img
+                src="/images/inspiration/river.png"
+                alt="річка"
+                class="map-img river"
+              />
+              <img
+                src="/images/inspiration/centavr.png"
+                alt="кентавр"
+                class="map-img centavr"
+              />
+              <div class="inspiration-header">
+                <div class="marker-wrap inspiration">
+                  <svg class="marker-icon inspiration">
+                    <use href="/icons/icons.svg#marker"></use>
+                  </svg>
+                  <p class="marker-number recipe">4</p>
+                  <svg class="chevron-icon recipe">
+                    <use href="/icons/icons.svg#chevron-right"></use>
+                  </svg>
+                </div>
+                <p class="card-title">Натхненні Параджановим</p>
+              </div>
+              <img
+                src="/images/inspiration/heads.png"
+                alt="обличчя"
+                class="map-img heads"
+              />
+              <img
+                src="/images/inspiration/paradjanov.png"
+                alt="Параджанов"
+                class="map-img paradjanov"
+              />
+              <img
+                src="/images/inspiration/silpo.png"
+                alt="логотип Сільпо"
+                class="map-img silpo"
+              />
+            </li>
+            <li class="map-item primachenko">
+              <img
+                src="/images/primachenko/land-04.png"
+                alt="земля"
+                class="map-img land-04"
+              />
+              <img
+                src="/images/primachenko/land-01.png"
+                alt="земля"
+                class="map-img land-01"
+              />
+              <img
+                src="/images/primachenko/land-03.png"
+                alt="земля"
+                class="map-img land-03"
+              />
+              <img
+                src="/images/primachenko/land-02.png"
+                alt="земля"
+                class="map-img land-02"
+              />
+              <img
+                src="/images/primachenko/comet.png"
+                alt="комета"
+                class="map-img comet"
+              />
+              <img
+                src="/images/primachenko/sheep.png"
+                alt="вівці"
+                class="map-img sheep"
+              />
+              <img
+                src="/images/primachenko/paradjanov-primachenko.png"
+                alt="Параджанов"
+                class="map-img paradjanov-primachenko"
+              />
+              <img
+                src="/images/primachenko/primachenko.png"
+                alt="Примаченко"
+                class="map-img primachenko"
+              />
+              <div class="primachenko-header">
+                <div class="marker-wrap primachenko">
+                  <svg class="marker-icon primachenko">
+                    <use href="/icons/icons.svg#marker"></use>
+                  </svg>
+                  <p class="marker-number primachenko">5</p>
+                  <svg class="chevron-icon primachenko">
+                    <use href="/icons/icons.svg#chevron-right"></use>
+                  </svg>
+                </div>
+                <p class="card-title">параджанов<br />та Примаченко</p>
+              </div>
+            </li>
+            <li class="map-item collages">
+              <div class="collages-header">
+                <div class="marker-wrap collages">
+                  <svg class="marker-icon primachenko">
+                    <use href="/icons/icons.svg#marker"></use>
+                  </svg>
+                  <p class="marker-number collages">6</p>
+                  <svg class="chevron-icon primachenko">
+                    <use href="/icons/icons.svg#chevron-right"></use>
+                  </svg>
+                </div>
+                <p class="card-title">Геніальні колажі</p>
+              </div>
+              <img
+                src="/images/collages/grape.png"
+                alt="виноград"
+                class="map-img grape"
+              />
+              <img
+                src="/images/collages/grapes.png"
+                alt="виноград"
+                class="map-img grapes"
+              />
+              <img
+                src="/images/collages/body.png"
+                alt="тіло митця"
+                class="map-img body"
+              />
+              <img
+                src="/images/collages/background.png"
+                alt="задній фон картини"
+                class="map-img background"
+              />
+              <img
+                src="/images/collages/frame.png"
+                alt="рамка"
+                class="map-img frame"
+              />
+              <img
+                src="/images/collages/head.png"
+                alt="голова митця"
+                class="map-img head"
+              />
+              <img
+                src="/images/collages/grape-01.png"
+                alt="виноград"
+                class="map-img grape-01"
+              />
+            </li>
+            <li class="map-item glasses">
+              <img
+                src="/images/glasses/towel.png"
+                alt="рушник"
+                class="map-img towel"
+              />
+              <div class="glasses-header">
+                <div class="marker-wrap glasses">
+                  <svg class="marker-icon primachenko">
+                    <use href="/icons/icons.svg#marker"></use>
+                  </svg>
+                  <p class="marker-number glasses">7</p>
+                  <svg class="chevron-icon primachenko">
+                    <use href="/icons/icons.svg#chevron-right"></use>
+                  </svg>
+                </div>
+                <p class="card-title">Стакани від сільпо</p>
+              </div>
+              <img
+                src="/images/glasses/glass-01.png"
+                alt="стакан"
+                class="map-img glass-01"
+              />
+              <img
+                src="/images/glasses/glass.png"
+                alt="стакан"
+                class="map-img glass"
+              />
+            </li>
+            <li class="map-item decorative-element inspiration">
+              <img
+                src="/images/decorative-element/decorative-sheep.png"
+                alt="вівці"
+                class="map-img decorative-sheep"
+              />
+              <img
+                src="/images/decorative-element/inspiration.png"
+                alt="вівці"
+                class="map-img inspiration"
+              />
+            </li>
+            <li class="map-item decorative-element slogan">
+              <img
+                src="/images/decorative-element/slogan.png"
+                alt="цитата"
+                class="map-img slogan"
+              />
+            </li>
+            <li class="map-item decorative-element slogan-01">
+              <img
+                src="/images/decorative-element/slogan-01.png"
+                alt="цитата"
+                class="map-img slogan-01"
+              />
+            </li>
+            <li class="map-item inspiration-element">
+              <img
+                src="/images/inspiration.png"
+                alt="натхнення"
+                class="map-img inspiration-element"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="controls">
+          <button type="button" class="zoom-btn js-zoom-btn">
+            <svg class="icon zoom-icon zoom-in-icon">
+              <use href="/icons/icons.svg#zoom-in"></use>
+            </svg>
+            <svg class="icon zoom-icon zoom-out-icon">
+              <use href="/icons/icons.svg#zoom-out"></use>
+            </svg>
+          </button>
+          <div class="map-controls">
+            <button type="button" class="menu-btn">
+              <svg class="icon">
+                <use href="/icons/icons.svg#menu"></use>
+              </svg>
+            </button>
+            <ul class="controls-list">
+              <li class="controls-list-item">
+                <button class="number-btn" type="button">i</button>
+              </li>
+              <li class="controls-list-item">
+                <button class="number-btn" type="button">ii</button>
+              </li>
+              <li class="controls-list-item">
+                <button class="number-btn" type="button">iii</button>
+              </li>
+              <li class="controls-list-item">
+                <button class="number-btn" type="button">iv</button>
+              </li>
+              <li class="controls-list-item">
+                <button class="number-btn" type="button">v</button>
+              </li>
+              <li class="controls-list-item">
+                <button class="number-btn" type="button">vi</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>

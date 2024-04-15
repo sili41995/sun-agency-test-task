@@ -1,0 +1,988 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 343px;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-img {
+  width: 104px;
+  height: 53.9px;
+}
+
+.cup-btn-wrap {
+  position: relative;
+}
+
+.cup-btn {
+  display: block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.cup-img {
+  width: 59px;
+  height: 59px;
+}
+
+.warning {
+  position: absolute;
+  z-index: -1;
+  top: 18px;
+  left: 50%;
+  width: 55px;
+  transform: translateX(-50%);
+  transition: top var(--transition-duration-and-func);
+}
+
+.cup-btn:is(:hover, :focus) + .warning {
+  top: 60px;
+}
+
+.map-container {
+  position: relative;
+  transform-origin: top left;
+  transition: transform var(--transition-duration-and-func);
+}
+
+.map {
+  position: absolute;
+  left: -500px;
+  top: -500px;
+  width: 6243px;
+  height: 3227px;
+  background-image: url('../images/map.jpg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  transform-origin: top left;
+}
+
+.map-position {
+  transition: top var(--transition-duration-and-func),
+    left var(--transition-duration-and-func);
+}
+
+.map-item {
+  position: absolute;
+}
+
+.map-item.life {
+  top: 600px;
+  left: 450px;
+  padding: 220.2px 173.8px 12.3px 118.2px;
+}
+
+.map-img {
+  position: absolute;
+}
+
+.map-img.life {
+  z-index: 1;
+  top: 67.6px;
+  left: 66.3px;
+  width: 245.3px;
+  height: 179.1px;
+}
+
+.life-quote-icon {
+  position: absolute;
+  top: 84.5px;
+  left: 292.6px;
+  width: 208.5px;
+  height: 55.6px;
+}
+
+.life-header {
+  position: relative;
+  width: 293.1px;
+  padding: 22.8px 0px 19.8px 21.6px;
+  background-image: url('../icons/life-bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.marker {
+  position: absolute;
+  width: 74.4px;
+  height: 74.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marker.life {
+  top: -21.9px;
+  left: 149.5px;
+}
+
+.marker-icon {
+  width: 53.3px;
+  height: 53.3px;
+  transition: transform var(--transition-duration-and-func);
+}
+
+.marker-icon.life {
+  transform: rotate(-9.29deg);
+}
+
+.life-header:is(:hover, :focus) .marker-icon {
+  transform: rotate(135deg);
+}
+
+.marker-number {
+  position: absolute;
+  color: var(--white-color);
+  font-family: Fixel Display;
+  font-size: 16.25px;
+  font-weight: 900;
+  line-height: 1.3;
+  text-transform: uppercase;
+  opacity: 1;
+  transition: opacity var(--transition-duration-and-func);
+}
+
+.marker-number.life {
+  top: 26.5px;
+  left: 33.6px;
+}
+
+.life-header:is(:hover, :focus) .marker-number {
+  opacity: 0;
+}
+
+.chevron-icon {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  opacity: 0;
+  transition: opacity var(--transition-duration-and-func);
+}
+
+.chevron-icon.life {
+  top: 25px;
+  left: 28px;
+}
+
+.life-header:is(:hover, :focus) .chevron-icon.life {
+  opacity: 1;
+}
+
+.card-title {
+  color: #2d3f59;
+  font-family: Unbounded;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.map-item.shadows {
+  top: 1154px;
+  left: 1681.25px;
+  padding: 469px 303.3px 117.7px 423.7px;
+}
+
+.map-img.crow {
+  top: 128.6px;
+  left: 128px;
+  width: 273.8px;
+  height: 191.8px;
+}
+
+.map-img.heroes {
+  z-index: 1;
+  top: 107.2px;
+  left: 678.6px;
+  width: 479.1px;
+  height: 416.4px;
+  transform: rotate(-10.42deg);
+}
+
+.map-img.candles {
+  top: 39.8px;
+  left: 744.4px;
+  width: 375.2px;
+  height: 261.9px;
+  transform: rotate(-10.42deg);
+}
+
+.map-img.mountains {
+  top: 156.9px;
+  left: 284.2px;
+}
+
+.shadows-header {
+  position: relative;
+  width: 713px;
+  padding: 36.8px 0px 28.5px 50.7px;
+  background-image: url('../icons/shadows-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.marker-wrap {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marker-wrap.shadows {
+  top: 62.7px;
+  left: -103.1px;
+}
+
+.marker-icon.shadows {
+  transform: rotate(-54.36deg);
+}
+
+.shadows-header:is(:hover, :focus) .marker-icon.shadows {
+  transform: rotate(135deg);
+}
+
+.marker-number.shadows {
+  top: 38px;
+  left: 54.5px;
+}
+
+.shadows-header:is(:hover, :focus) .chevron-icon.shadows {
+  opacity: 1;
+}
+
+.shadows-header:is(:hover, :focus) .marker-number.shadows {
+  opacity: 0;
+}
+
+.chevron-icon.shadows {
+  top: 35px;
+  left: 45px;
+}
+
+.map-item.recipe {
+  top: 1974px;
+  left: 240px;
+  padding: 361.4px 0px 235.6px 641px;
+}
+
+.recipe-header {
+  position: relative;
+  width: 540px;
+  padding: 26.5px 0px 28.5px 50.7px;
+  background-image: url('../icons/recipe-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.marker-wrap.recipe {
+  top: -39.7px;
+  left: 481.9px;
+}
+
+.marker-icon.recipe {
+  transform: rotate(-105deg);
+}
+
+.marker-number.recipe {
+  top: 38.8px;
+  left: 54.2px;
+}
+
+.chevron-icon.recipe {
+  top: 35px;
+  left: 45px;
+}
+
+.recipe-header:is(:hover, :focus) .chevron-icon.recipe {
+  opacity: 1;
+}
+
+.recipe-header:is(:hover, :focus) .marker-number.recipe {
+  opacity: 0;
+}
+
+.recipe-header:is(:hover, :focus) .marker-icon.recipe {
+  transform: rotate(135deg);
+}
+
+.map-img.recipe {
+  top: -155.3px;
+  left: -136.2px;
+  width: 853.6px;
+  height: 817px;
+}
+
+.map-item.inspiration {
+  top: 1974px;
+  left: 3121.3px;
+  padding: 465.8px 330.6px 131.2px 177.1px;
+}
+
+.map-img.silpo {
+  top: 183.7px;
+  left: 226.8px;
+  width: 107.2px;
+  height: 41.7px;
+  transform: rotate(-1.15deg);
+}
+
+.map-img.paradjanov {
+  top: 114.5px;
+  left: 265.9px;
+  width: 236.4px;
+  height: 285.3px;
+  transform: rotate(-25.68deg);
+}
+
+.map-img.heads {
+  top: 95.1px;
+  left: 101.5px;
+  width: 611.7px;
+  height: 545.4px;
+  transform: rotate(24.07deg);
+}
+
+.map-img.land {
+  top: 223.1px;
+  left: 144.3px;
+  width: 1026.5px;
+  height: 634.2px;
+}
+
+.map-img.river {
+  top: 404.9px;
+  left: 756.4px;
+  width: 364.8px;
+  height: 165px;
+  transform: rotate(17.3deg);
+}
+
+.map-img.centavr {
+  top: 105.5px;
+  left: 905.8px;
+  width: 448px;
+  height: 531.8px;
+}
+
+.inspiration-header {
+  position: relative;
+  width: 922.3px;
+  padding: 26.5px 0px 28.5px 50.7px;
+  background-image: url('../icons/inspiration-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.marker-wrap.inspiration {
+  top: 138.7px;
+  left: -76.2px;
+}
+
+.marker-icon.inspiration {
+  transform: rotate(-107.21deg);
+}
+
+.inspiration-header:is(:hover, :focus) .chevron-icon.recipe {
+  opacity: 1;
+}
+
+.inspiration-header:is(:hover, :focus) .marker-number.recipe {
+  opacity: 0;
+}
+
+.inspiration-header:is(:hover, :focus) .marker-icon.inspiration {
+  transform: rotate(135deg);
+}
+
+.map-item.primachenko {
+  top: 334px;
+  left: 3121.3px;
+  padding: 500px 340.3px 97px 228.8px;
+}
+
+.primachenko-header {
+  position: relative;
+  width: 871px;
+  padding: 26.5px 0px 28.5px 50.7px;
+  background-image: url('../icons/primachenko-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.marker-wrap.primachenko {
+  top: 12.5px;
+  left: 812.1px;
+}
+
+.marker-icon.primachenko {
+  transform: rotate(-54.36deg);
+}
+
+.marker-number.primachenko {
+  top: 38.8px;
+  left: 54.2px;
+}
+
+.chevron-icon.primachenko {
+  top: 35px;
+  left: 45px;
+}
+
+.primachenko-header:is(:hover, :focus) .chevron-icon.primachenko {
+  opacity: 1;
+}
+
+.primachenko-header:is(:hover, :focus) .marker-number.primachenko {
+  opacity: 0;
+}
+
+.primachenko-header:is(:hover, :focus) .marker-icon.primachenko {
+  transform: rotate(135deg);
+}
+
+.map-img.comet {
+  top: 43.3px;
+  left: 3.3px;
+  width: 285px;
+  height: 206.6px;
+  transform: rotate(175.35deg);
+}
+
+.map-img.sheep {
+  top: 410.5px;
+  left: 786.2px;
+  width: 89.6px;
+  height: 86.7px;
+  transform: rotate(-37.14deg);
+}
+
+.map-img.primachenko {
+  top: -1.2px;
+  left: 665.9px;
+  width: 448.6px;
+  height: 380px;
+  transform: rotate(-171.28deg);
+}
+
+.map-img.paradjanov-primachenko {
+  top: 176px;
+  left: 316.3px;
+  width: 415.1px;
+  height: 324px;
+}
+
+.map-img.land-01 {
+  top: 474.8px;
+  left: 239.6px;
+  width: 256.5px;
+  height: 107.2px;
+  transform: rotate(-14.31deg);
+}
+
+.map-img.land-02 {
+  top: 443.5px;
+  left: 570.8px;
+  width: 567.3px;
+  height: 268.2px;
+  transform: rotate(-165.69deg);
+}
+
+.map-img.land-03 {
+  top: 344.5px;
+  left: 313.3px;
+  width: 913.1px;
+  height: 295.4px;
+  transform: rotate(-5.07deg);
+}
+
+.map-img.land-04 {
+  top: 337.1px;
+  left: 437px;
+  width: 419.4px;
+  height: 211.9px;
+  transform: rotate(21.34deg);
+}
+
+.map-item.collages {
+  top: 1154px;
+  left: 4562.5px;
+  padding: 264.4px 228.5px 332.6px 626.5px;
+}
+
+.collages-header {
+  position: relative;
+  width: 585px;
+  padding: 26.5px 0px 28.5px 50.7px;
+  background-image: url('../icons/collages-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.marker-wrap.collages {
+  top: -80.7px;
+  left: 478.3px;
+}
+
+.marker-number.collages {
+  top: 39.6px;
+  left: 53.8px;
+}
+
+.collages-header:is(:hover, :focus) .chevron-icon.primachenko {
+  opacity: 1;
+}
+
+.collages-header:is(:hover, :focus) .marker-number.collages {
+  opacity: 0;
+}
+
+.collages-header:is(:hover, :focus) .marker-icon.primachenko {
+  transform: rotate(135deg);
+}
+
+.map-img.grape {
+  top: 590.9px;
+  left: 104.1px;
+  width: 75.7px;
+  height: 81.3px;
+  transform: rotate(-30deg);
+}
+
+.map-img.grapes {
+  top: 547.3px;
+  left: 657.2px;
+  width: 156.3px;
+  height: 104.1px;
+}
+
+.map-img.head {
+  top: 96.9px;
+  left: 406.1px;
+  width: 197.7px;
+  height: 177.9px;
+  transform: rotate(3.16deg);
+}
+
+.map-img.grape-01 {
+  top: 232.7px;
+  left: 313.3px;
+  width: 64.8px;
+  height: 66.7px;
+  transform: rotate(3.16deg);
+}
+
+.map-img.frame {
+  top: 268px;
+  left: 233.5px;
+  width: 435.8px;
+  height: 330.4px;
+  transform: rotate(7.83deg);
+}
+
+.map-img.background {
+  top: 266.6px;
+  left: 255.9px;
+  width: 379.1px;
+  height: 334.9px;
+}
+
+.map-img.body {
+  top: 252.2px;
+  left: 253.6px;
+  width: 420.1px;
+  height: 180.6px;
+  transform: rotate(5.1deg);
+}
+
+.map-item.glasses {
+  top: 1974px;
+  left: 4562.5px;
+  padding: 400.4px 102.5px 196.6px 681.5px;
+}
+
+.glasses-header {
+  position: relative;
+  width: 656px;
+  padding: 26.5px 0px 28.5px 50.7px;
+  background-image: url('../icons/glasses-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.marker-wrap.glasses {
+  top: 95.3px;
+  left: 598.3px;
+}
+
+.marker-number.glasses {
+  top: 37.6px;
+  left: 54.9px;
+}
+
+.glasses-header:is(:hover, :focus) .chevron-icon.primachenko {
+  opacity: 1;
+}
+
+.glasses-header:is(:hover, :focus) .marker-number.glasses {
+  opacity: 0;
+}
+
+.glasses-header:is(:hover, :focus) .marker-icon.primachenko {
+  transform: rotate(135deg);
+}
+
+.map-img.glass {
+  top: 281.7px;
+  left: 337.7px;
+  width: 257.1px;
+  height: 261.8px;
+  transform: rotate(-8.44deg);
+}
+
+.map-img.glass-01 {
+  top: 173.5px;
+  left: 461.2px;
+  width: 344.34px;
+  height: 350.6px;
+  transform: rotate(10.74deg);
+}
+
+.map-img.towel {
+  top: 444.2px;
+  left: 308.4px;
+  width: 672.8px;
+  height: 222.3px;
+  transform: rotate(10.3deg);
+}
+
+.decorative-element {
+  width: 1440px;
+  height: 820px;
+}
+
+.decorative-element.inspiration {
+  top: 334px;
+  left: 4562.5px;
+}
+
+.map-img.decorative-sheep {
+  top: 372.3px;
+  left: 581.4px;
+  width: 255.5px;
+  height: 181.7px;
+}
+
+.map-img.inspiration {
+  top: 185px;
+  left: 719px;
+  width: 513px;
+  height: 152px;
+  transform: rotate(27.78deg);
+}
+
+.decorative-element.slogan {
+  top: 1154px;
+  left: 3121.3px;
+}
+
+.map-img.slogan {
+  top: 395.9px;
+  left: 290.7px;
+  width: 579.3px;
+  height: 139.4px;
+}
+
+.decorative-element.slogan-01 {
+  top: 1974px;
+  left: 1681.3px;
+}
+
+.map-img.slogan-01 {
+  top: 185.2px;
+  left: 405.5px;
+  width: 614.5px;
+  height: 133.6px;
+}
+
+.map-item.inspiration-element {
+  top: 1381.2px;
+  left: 284.4px;
+  width: 100%;
+}
+
+.map-img.inspiration-element {
+  width: 424.6px;
+  height: 125.8px;
+  transform: rotate(18.31deg);
+}
+
+.controls {
+  position: fixed;
+  z-index: 100;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.zoom-btn {
+  position: relative;
+  border: none;
+  border-radius: 50%;
+  padding: 16px;
+  backdrop-filter: blur(20px);
+  background-color: var(--controls-bg-color);
+}
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: var(--white-color);
+}
+
+.zoom-icon {
+  transition: opacity var(--transition-duration-and-func);
+}
+
+.zoom-in-icon {
+  opacity: 1;
+}
+
+.zoom-out-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0;
+}
+
+.zoom-btn.active .zoom-out-icon {
+  opacity: 1;
+}
+
+.zoom-btn.active .zoom-in-icon {
+  opacity: 0;
+}
+
+.zoom-btn:is(:hover, :focus) {
+  transition: transform var(--transition-duration-and-func);
+  transform: scale(1.25);
+}
+
+.map-controls {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  height: 60px;
+  padding: 8px;
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+  background-color: var(--controls-bg-color);
+}
+
+.menu-btn {
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--controls-btn-color);
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.menu-btn:is(:hover, :focus) {
+  background-color: var(--accent-color);
+}
+
+.controls-list {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.controls-list-item {
+  padding: 8px;
+}
+
+.number-btn {
+  min-width: 24px;
+  padding: 1.5px 0;
+  border: none;
+  background-color: transparent;
+  color: var(--white-color);
+  font-family: Unbounded;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.number-btn:is(:hover, :focus) {
+  border-bottom: 2px dashed var(--white-color);
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    top: 18px;
+    width: 1280px;
+  }
+
+  .logo-img {
+    width: 166px;
+    height: 86px;
+  }
+
+  .cup-img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .warning {
+    z-index: -1;
+    top: 24.1px;
+    left: 50%;
+    width: 74px;
+    height: 39.8px;
+  }
+
+  .cup-btn:is(:hover, :focus) + .warning {
+    top: 83.1px;
+  }
+
+  .map {
+    left: 0px;
+    top: -454px;
+  }
+
+  .map-item.life {
+    top: 334px;
+    left: 241.25px;
+    padding: 488px 298px 30px 291px;
+  }
+
+  .map-img.life {
+    z-index: 1;
+    top: 166px;
+    left: 162.75px;
+    width: 603.6px;
+    height: 440.8px;
+  }
+
+  .life-quote-icon {
+    position: absolute;
+    top: 208px;
+    left: 720px;
+    width: 513.1px;
+    height: 136.8px;
+  }
+
+  .life-header {
+    width: 851px;
+    padding: 105.2px 3px 28px 50.7px;
+    background-image: url('../icons/life-bg.svg');
+  }
+
+  .marker {
+    width: 183px;
+    height: 183px;
+  }
+
+  .marker.life {
+    top: 0;
+    left: 367.86px;
+  }
+
+  .marker-icon {
+    width: 131px;
+    height: 131px;
+  }
+
+  .marker-number {
+    font-size: 40px;
+  }
+
+  .marker-number.life {
+    top: 65px;
+    left: 83px;
+  }
+
+  .chevron-icon {
+    width: 48.7px;
+    height: 48.7px;
+  }
+
+  .chevron-icon.life {
+    top: 66px;
+    left: 71px;
+  }
+
+  .card-title {
+    font-size: 70px;
+  }
+
+  .controls {
+    bottom: 29px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    gap: 339px;
+    width: 1280px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .map-controls {
+    gap: 24px;
+  }
+
+  .controls-list {
+    gap: 20px;
+  }
+
+  .controls-list-item {
+    padding: 10px;
+  }
+
+  .number-btn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .map-container {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .map-item.shadows {
+    display: none;
+  }
+
+  .map-item.recipe {
+    display: none;
+  }
+
+  .map-item.inspiration {
+    display: none;
+  }
+
+  .map-item.primachenko {
+    display: none;
+  }
+
+  .map-item.collages {
+    display: none;
+  }
+
+  .map-item.glasses {
+    display: none;
+  }
+
+  .zoom-btn {
+    display: none;
+  }
+}

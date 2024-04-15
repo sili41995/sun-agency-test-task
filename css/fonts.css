@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Unbounded';
+  src: local('Unbounded'),
+    url('../fonts/Unbounded/Unbounded-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Fixel Display';
+  src: local('Fixel Display'),
+    url('../fonts/FixelDisplay/FixelDisplay-Black.ttf') format('truetype');
+  font-weight: 900;
+}
